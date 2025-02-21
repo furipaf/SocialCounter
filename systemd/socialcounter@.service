@@ -1,0 +1,12 @@
+[Unit]
+Description=Social Counter Service for %i
+After=network.target
+
+[Service]
+ExecStart=/home/%h/social-counter/start.sh
+WorkingDirectory=/home/%h/social-counter
+User=%i
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
