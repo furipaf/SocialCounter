@@ -5,7 +5,7 @@ A dashboard to display social media statistics with draggable widgets.
 ## Installation
 
 1. **Install Dependencies**
-   ```bash
+   ```bash   
    sudo apt update && sudo apt upgrade -y
    sudo apt install python3 python3-pip python3-venv chromium-browser xdotool -y
 
@@ -22,13 +22,13 @@ A dashboard to display social media statistics with draggable widgets.
 
 4. **Configure Service**
    ```bash
-   sudo cp app/socialcounter.service /etc/systemd/system/
+   sudo cp systemd/socialcounter@.service /etc/systemd/system/
    sudo systemctl daemon-reload
-   sudo systemctl enable socialcounter.service
+   sudo systemctl enable socialcounter@pi.service  # Replace 'pi' with your username
 
 5. **First Run**
    ```bash
-   sudo systemctl start socialcounter.service
+   sudo systemctl start socialcounter@pi.service  # Replace 'pi' with your username
 
 6. **Configuration**
    - Access the web interface at http://your-pi-ip:5000
@@ -92,3 +92,22 @@ A dashboard to display social media statistics with draggable widgets.
 - Blank Screen: Check if Flask is running (sudo journalctl -u socialcounter)
 - API Errors: Verify URLs in configuration
 - Display Issues: Confirm Chromium is installed
+
+## Directory Structure
+   ```bash
+   social-counter/
+   ├── app/
+   │   ├── static/
+   │   │   ├── css/
+   │   │   │   └── style.css
+   │   │   └── js/
+   │   │       └── script.js
+   │   ├── templates/
+   │   │   └── index.html
+   │   └── config.json
+   ├── systemd/
+   │   └── socialcounter@.service
+   ├── app.py
+   ├── requirements.txt
+   ├── start.sh
+   └── README.md
