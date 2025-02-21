@@ -11,7 +11,7 @@ A dashboard to display social media statistics with draggable widgets.
 
 2. **Clone Repository**
    ```bash
-   git clone https://github.com/yourusername/social-counter.git
+   git clone https://github.com/furipaf/social-counter.git
    cd social-counter
 
 3. **Set Up Virtual Environment**
