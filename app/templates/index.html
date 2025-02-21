@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Social Counter</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <h1 id="main-title">Loading...</h1>
+        <button id="settings-btn" class="gear-btn"><i class="fas fa-cog"></i></button>
+    </div>
+    
+    <div id="counter-container" class="grid-container"></div>
+
+    <!-- Settings Modal -->
+    <div id="settings-modal" class="modal">
+        <!-- Modal content -->
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
