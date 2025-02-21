@@ -3,8 +3,9 @@ import json
 import time
 from socialcounters import SocialCounters
 
-app = Flask(__name__, static_folder='app/static', template_folder='app/templates')
-CONFIG_FILE = 'app/config.json'
+app = Flask(__name__, 
+    static_folder=os.path.join(os.path.expanduser('~'), 'social-counter/app/static'),
+    template_folder=os.path.join(os.path.expanduser('~'), 'social-counter/app/templates'))
 
 # ... [Previous backend code from earlier response] ...
 
