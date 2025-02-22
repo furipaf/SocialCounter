@@ -1,5 +1,0 @@
-Flask==2.0.1
-requests==2.26.0
-git+https://github.com/juanv911/SocialCounters.git
-lxml==4.9.2
-cssselect==1.2.0
