@@ -90,7 +90,7 @@ This project is a web-based application designed to run on a Raspberry Pi. It fe
 
 ### Dashboard (`index.html`)
 - Displays real-time social media analytics in a responsive layout.
-- Use the **refresh icon** (<i class="fa fa-refresh"></i>) in the top-right corner to manually refresh the data.
+- Use the **refresh icon** (🔄) in the top-right corner to manually refresh the data.
 
 ### Admin Console (`admin.html`)
 - Configure API credentials for social media platforms.
@@ -98,19 +98,18 @@ This project is a web-based application designed to run on a Raspberry Pi. It fe
 - Delete old data files using the "Delete Old Data" button.
 
 ### Icons
-- **Home Icon** (<i class="fa fa-home"></i>): Redirects to the dashboard.
-- **Info Icon** (<i class="fa fa-info-circle"></i>): Opens the Facebook Graph API documentation in a new tab.
+- **Home Icon** (🏠): Redirects to the dashboard.
+- **Info Icon** (ⓘ): Opens the Facebook Graph API documentation in a new tab.
+- **Gear Icon** (⚙️): Opens the Admin Console to configure API credentials for social media platforms. 
 
 ---
 
 ## Screenshots
 
-### Dashboard
-![1740380574080](https://github.com/user-attachments/assets/118e03a6-3183-4fd0-a6fe-658789174e14)
-
-
-### Admin Console
-![1740380574083](https://github.com/user-attachments/assets/e53b41b7-18c7-4d03-998e-66c503db6ba6)
+<p align="center"> 
+ <img src="https://github.com/user-attachments/assets/118e03a6-3183-4fd0-a6fe-658789174e14" width="47%">
+ <img src="https://github.com/user-attachments/assets/e53b41b7-18c7-4d03-998e-66c503db6ba6" width="47%">
+</p>
 
 
 ---
