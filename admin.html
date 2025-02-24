@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Console</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Admin Console</h1>
+            <a href="/" class="home-icon" title="Home"><i class="fa fa-home" aria-hidden="true"></i></a>
+        </div>
+
+        <!-- Facebook Settings -->
+        <div class="settings-box">
+            <div class="settings-header">
+                <h2><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</h2>
+                <a href="https://developers.facebook.com/docs/graph-api" target="_blank" class="info-icon" title="Get Facebook Access Token">
+                    <i class="fa fa-info-circle" aria-hidden="true"></i>
+                </a>
+            </div>
+            <form id="facebookForm">
+                <input type="text" id="fbAccessToken" placeholder="Facebook Access Token" required>
+                <input type="text" id="fbPageId" placeholder="Facebook Page ID" required>
+                <div class="fields-grid">
+                    <label><input type="checkbox" name="fields" value="id" checked> ID</label>
+                    <label><input type="checkbox" name="fields" value="name" checked> Name</label>
+                    <label><input type="checkbox" name="fields" value="category"> Category</label>
+                    <label><input type="checkbox" name="fields" value="checkins"> Checkins</label>
+                    <label><input type="checkbox" name="fields" value="fan_count" checked> Fan Count</label>
+                    <label><input type="checkbox" name="fields" value="followers_count"> Followers Count</label>
+                    <label><input type="checkbox" name="fields" value="talking_about_count" checked> Talking About Count</label>
+                    <label><input type="checkbox" name="fields" value="were_here_count" checked> Were Here Count</label>
+                </div>
+                <button type="submit">Save Facebook Settings</button>
+            </form>
+        </div>
+
+        <!-- Add more social media boxes here (e.g., Instagram, Twitter, etc.) -->
+
+        <button id="deleteData">Delete Old Data</button>
+    </div>
+    <script src="js/admin.js"></script>
+</body>
+</html>
