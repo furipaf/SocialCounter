@@ -52,6 +52,7 @@ This project is a web-based application designed to run on a Raspberry Pi. It fe
    ```bash
    git clone https://github.com/furipaf/social-counter.git
    cd social-counter
+   md data
    ```
 
 ### Step 2: Install Dependencies
