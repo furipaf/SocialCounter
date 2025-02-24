@@ -48,7 +48,13 @@ This project is a web-based application designed to run on a Raspberry Pi. It fe
 
 ### Step 1: Clone the Repository
 1. Open the terminal on your Raspberry Pi.
-2. Clone the repository:
+   ```bash
+   sudo apt update
+   sudo apt full-upgrade -y
+   sudo raspi-config     # extend file system
+   sudo reboot
+   ```
+3. Clone the repository:
    ```bash
    git clone https://github.com/furipaf/social-counter.git
    cd social-counter
@@ -64,7 +70,6 @@ This project is a web-based application designed to run on a Raspberry Pi. It fe
 ### Step 3: Configure the Application
 1. **Facebook API**:
    - Obtain a **Page Access Token** from the [Facebook Graph API Explorer](https://developers.facebook.com/tools/explorer/).
-   - Open the admin console (`http://<raspberry-pi-ip>:3000/admin`).
    - Enter the **Page Access Token** and **Page ID** in the Facebook settings form.
 
 2. **Other Social Media Platforms**:
@@ -130,6 +135,7 @@ Contributions are welcome! If you'd like to contribute, please follow these step
 ## Acknowledgments
 - **Font Awesome**: For providing the icons used in this project.
 - **Facebook Graph API**: For enabling access to Facebook data.
+- **DeekSeek**: For providing AI-powered assistance in developing this project.
 
 ---
 
