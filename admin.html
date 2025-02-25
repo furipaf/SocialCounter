@@ -16,30 +16,39 @@
         </div>
 
         <!-- Facebook Settings -->
-        <div class="settings-box">
-            <div class="settings-header">
-                <h2><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</h2>
-                <a href="https://developers.facebook.com/docs/graph-api" target="_blank" class="info-icon" title="Get Facebook Access Token">
-                    <i class="fa fa-info-circle" aria-hidden="true"></i>
-                </a>
-            </div>
-            <form id="facebookForm">
-                <input type="text" id="fbAccessToken" placeholder="Facebook Access Token" required>
-                <input type="text" id="fbPageId" placeholder="Facebook Page ID" required>
-                <div class="fields-grid">
-                    <label><input type="checkbox" name="fields" value="id" checked> ID</label>
-                    <label><input type="checkbox" name="fields" value="name" checked> Name</label>
-                    <label><input type="checkbox" name="fields" value="category"> Category</label>
-                    <label><input type="checkbox" name="fields" value="checkins"> Checkins</label>
-                    <label><input type="checkbox" name="fields" value="fan_count" checked> Fan Count</label>
-                    <label><input type="checkbox" name="fields" value="followers_count"> Followers Count</label>
-                    <label><input type="checkbox" name="fields" value="talking_about_count" checked> Talking About Count</label>
-                    <label><input type="checkbox" name="fields" value="were_here_count" checked> Were Here Count</label>
-                </div>
-                <button type="submit">Save Facebook Settings</button>
-            </form>
+<div class="settings-box">
+    <div class="settings-header">
+        <h2><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</h2>
+        <a href="https://developers.facebook.com/docs/graph-api" target="_blank" class="info-icon" title="Get Facebook Access Token">
+            <i class="fa fa-info-circle" aria-hidden="true"></i>
+        </a>
+    </div>
+    <form id="facebookForm">
+        <input type="text" id="fbAccessToken" placeholder="Facebook Access Token" required>
+        <input type="text" id="fbPageId" placeholder="Facebook Page ID" required>
+        <div class="fields-grid">
+            <label><input type="checkbox" name="fields" value="id" checked> ID</label>
+            <label><input type="checkbox" name="fields" value="name" checked> Name</label>
+            <label><input type="checkbox" name="fields" value="category"> Category</label>
+            <label><input type="checkbox" name="fields" value="checkins"> Checkins</label>
+            <label><input type="checkbox" name="fields" value="fan_count" checked> Fan Count</label>
+            <label><input type="checkbox" name="fields" value="followers_count"> Followers Count</label>
+            <label><input type="checkbox" name="fields" value="talking_about_count" checked> Talking About Count</label>
+            <label><input type="checkbox" name="fields" value="were_here_count" checked> Were Here Count</label>
+            <label><input type="checkbox" name="fields" value="ad_campaign"> Ad Campaign</label>
+            <label><input type="checkbox" name="fields" value="instagram_accounts"> Instagram Accounts</label>
+            <label><input type="checkbox" name="fields" value="instagram_business_account"> Instagram Business Account</label>
+            <label><input type="checkbox" name="fields" value="is_eligible_for_branded_content"> Eligible for Branded Content</label>
+            <label><input type="checkbox" name="fields" value="link"> Link</label>
+            <label><input type="checkbox" name="fields" value="does_viewer_have_page_permission_link_ig"> Viewer Page Permission Link (IG)</label>
+            <label><input type="checkbox" name="fields" value="overall_star_rating"> Overall Star Rating</label>
+            <label><input type="checkbox" name="fields" value="unread_notif_count"> Unread Notification Count</label>
+            <label><input type="checkbox" name="fields" value="unread_message_count"> Unread Message Count</label>
+            <label><input type="checkbox" name="fields" value="unseen_message_count"> Unseen Message Count</label>
         </div>
-
+        <button type="submit">Save Facebook Settings</button>
+    </form>
+</div>
         <!-- Add more social media boxes here (e.g., Instagram, Twitter, etc.) -->
 
         <button id="deleteData">Delete Old Data</button>

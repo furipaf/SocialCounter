@@ -91,6 +91,23 @@ button:hover {
     background-color: #0056b3;
 }
 
+.icons {
+    display: flex;
+    gap: 15px; /* Space between icons */
+}
+
+.icons i {
+    font-size: 24px;
+    color: #007bff;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover */
+}
+
+.icons i:hover {
+    color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.1); /* Slightly enlarge the icon */
+}
+
 
 /* Info Box */
 .info-box {

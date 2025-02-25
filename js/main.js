@@ -28,6 +28,16 @@ async function updateDisplay() {
                 ${item.followers_count ? `<p>Followers Count: ${item.followers_count}</p>` : ''}
                 <p>Talking About Count: ${item.talking_about_count}</p>
                 <p>Were Here Count: ${item.were_here_count}</p>
+                ${item.ad_campaign ? `<p>Ad Campaign: ${item.ad_campaign}</p>` : ''}
+                ${item.instagram_accounts ? `<p>Instagram Accounts: ${item.instagram_accounts}</p>` : ''}
+                ${item.instagram_business_account ? `<p>Instagram Business Account: ${item.instagram_business_account}</p>` : ''}
+                ${item.is_eligible_for_branded_content ? `<p>Eligible for Branded Content: ${item.is_eligible_for_branded_content}</p>` : ''}
+                ${item.link ? `<p>Link: <a href="${item.link}" target="_blank">${item.link}</a></p>` : ''}
+                ${item.does_viewer_have_page_permission_link_ig ? `<p>Viewer Page Permission Link (IG): ${item.does_viewer_have_page_permission_link_ig}</p>` : ''}
+                ${item.overall_star_rating ? `<p>Overall Star Rating: ${'<i class="fas fa-star"></i>'.repeat(Math.round(item.overall_star_rating))}</p>` : ''}
+                ${item.unread_notif_count ? `<p>Unread Notification Count: ${item.unread_notif_count}</p>` : ''}
+                ${item.unread_message_count ? `<p>Unread Message Count: ${item.unread_message_count}</p>` : ''}
+                ${item.unseen_message_count ? `<p>Unseen Message Count: ${item.unseen_message_count}</p>` : ''}
             `;
             display.appendChild(box);
         });
@@ -40,6 +50,7 @@ async function updateDisplay() {
 
 // Refresh icon functionality
 document.getElementById('refreshIcon').addEventListener('click', () => {
+    console.log('Refresh icon clicked'); // Debugging: Log when the refresh icon is clicked
     updateDisplay();
 });
 
