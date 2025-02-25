@@ -107,10 +107,9 @@ This project is a web-based application designed to run on a Raspberry Pi. It fe
 ## Screenshots
 
 <p align="center"> 
- <img src="https://github.com/user-attachments/assets/118e03a6-3183-4fd0-a6fe-658789174e14" width="47%">
- <img src="https://github.com/user-attachments/assets/e53b41b7-18c7-4d03-998e-66c503db6ba6" width="47%">
+ <img src="https://github.com/user-attachments/assets/33a118b2-8a2a-4947-ac3e-0001f5fe949a" width="47%">
+ <img src="https://github.com/user-attachments/assets/5b8707a1-5bbe-4da5-91ae-b1315bf01cf9" width="47%">
 </p>
-
 
 ---
 
